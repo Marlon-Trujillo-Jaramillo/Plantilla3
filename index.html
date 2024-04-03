@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Desarrollador Web - Estilo Moderno</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-50" id="mainNav">
+        <a class="navbar-brand" href="#">Mi Portafolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portafolio">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="sobre-mi" class="bg-gradient-dark py-5">
+        <div class="container about">
+            <h2 class="text-center mb-4" id="aboutTitle">Sobre Mí</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>¡Hola! Soy Bob</h3>
+                    <p>¡Bienvenido a mi portafolio! Soy un desarrollador web apasionado por crear experiencias digitales increíbles.</p>
+                    <a href="/Hoja de vida.pdf" download>
+                        <i class="fa fa-download"></i> Descargar Hoja de Vida
+                    </a>
+                </div>
+                <div class="col-md-4">                    
+                    <img src="/cholo.webp" alt="Imagen de Perfil" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+ <section id="portafolio" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Portafolio</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner custom-carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="/portafolio1.jpg" class="card-img-top" alt="Proyecto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 1</h5>
+                                    <p class="card-text">Descripción del proyecto 1.</p>
+                                    <a href="http://">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="/portafolio2.jpg" class="card-img-top" alt="Proyecto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 2</h5>
+                                    <p class="card-text">Descripción del proyecto 2.</p>
+                                    <a href="http://">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card h-100">
+                                <img src="/portafolio3.jpg" class="card-img-top" alt="Proyecto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Proyecto 3</h5>
+                                    <p class="card-text">Descripción del proyecto 3.</p>
+                                    <a href="http://">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" rows="5" class="form-control"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-info btn-block" onclick="validarFormulario()">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark py-4">
+        <div class="container text-center">
+            <div class="social-icons text-white">
+                <a href="https://www.linkedin.com/in/tuusuario" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:tucorreo@gmail.com"><i class="far fa-envelope"></i></a>
+                <a href="https://github.com/tuusuario" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2024 - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+

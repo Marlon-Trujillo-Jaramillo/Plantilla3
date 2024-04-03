@@ -1,0 +1,18 @@
+.navbar{
+  position: fixed;
+  width: 100%;
+}
+
+.navbar .navbar-brand, .navbar .navbar-collapse .navbar-nav .nav-link{
+  color: aliceblue;
+}
+
+.card-img-top {
+  height: 300px; /* Ajusta la altura de la imagen según tu preferencia */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el contenedor */
+}
+
+.container .carousel .custom-carousel-inner {
+  margin-left:  380px;
+}
+
